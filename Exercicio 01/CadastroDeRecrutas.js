@@ -8,7 +8,9 @@ segundoNome = prompt ("Insira seu segundo Nome:")
 campoDeEstudo = prompt ("Insira seu campo de Estudo:")
 anoNascimento = prompt ("Insira seu ano de nascimento:")
 
-alert(primeiroNome)
-alert(segundoNome)
-alert(campoDeEstudo)*/
-alert((2023 - anoNascimento) + " Anos")
+alert(  "Recruta Cadastrado com Sucesso !!!\n" +
+        "\n\nNome completo: "+primeiroNome +
+        "\nSegundo nome: " + segundoNome +
+        "\nCampo de estudo: " + campoDeEstudo +
+        "\nIdade: " + (2023 - anoNascimento)
+)
