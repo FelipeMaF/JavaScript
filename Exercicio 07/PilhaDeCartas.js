@@ -2,7 +2,7 @@ let baralho = []
 let opcao = ''
 
 do{
-    opcao = prompt("Cartas na Mão"+ baralho +"\n(1) Adicionar carta - (2) Puxar uma carta - (3) Sair")
+    opcao = prompt("Cartas na Mão"+ baralho +"\n(1) Adicionar carta\n(2) Puxar uma carta\n(3) Sair")
 
     switch (opcao) {
         case '1':
