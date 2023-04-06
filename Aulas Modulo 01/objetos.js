@@ -7,7 +7,7 @@ let objeto = {}
 objeto.prop = "Olá mundo"
 
 //outro exemplo
-const pesoa = {}
+const pessoa = {}
 
 pessoa.nome = "Felipe"
 pessoa.idade = 26
