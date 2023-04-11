@@ -1,35 +1,43 @@
-/* conteudo do exercicio
-Cadastro de imoveis
-*mostrar no menu principal a quantidade de imoveis cadastrados
-*opção de salvar imovel
-informações ao salvar imovel: nome do proprietario, quantidade de quartos, quantidade de banheiros, se possui garagem.
-*opção de mostrar todos imoveis salvos */
-
-let opcao = 0
 const imoveis = []
-let imovel = {}
+let opcao = ""
 
-do{
-    opcao = prompt(imoveis + "\nCadastro de Imoveis\n1- Cadastrar Imovel\n2- Mostrar todos imoveis\n3- Sair")
+do {
+        opcao = prompt("Cadastro de Imoveis" +
+        "\nQuantidade de imoveis cadastrados: "+ imoveis.length +
+        "\n(1) Cadastrar novo imovel" +
+        "\n(2) Listar imoveis" +
+        "\n(3) Fechar programa")
+
     switch(opcao) {
-        case '1':
-            imovel.proprietario = prompt("Nome do proprietario: ")
+        case "1":
+            let imovel = {}
+
+            imovel.prop = prompt("Digite o nome do proprietario: ")
             imovel.quartos = prompt("Quantos quartos possui: ")
             imovel.banheiros = prompt("Quantos banheiros possui: ")
-            imovel.garagem = prompt("Possui garagem: ")
+            imovel.garagem = prompt("Possui garagem, SIM/NÃO: ")
 
-            imoveis.push = (imovel.proprietario + imovel.quartos + imovel.banheiros + imovel.garagem)
-            alert(imoveis [0])
-            break
-        
-        case '2':
-            alert("Ver imovel")
-            break
+            imoveis.push(imovel)
+        break
 
-        case '3':
-            alert("Saindo")
-            break
+        case "2":
+            for(let i = 0; i < imoveis.length; i++)
+
+            alert(
+                "Imovel " + (i + 1) +
+                "\nProprietario: " + imoveis[i].prop +
+                "\nQuantidade de quartos: " + imoveis[i].quartos +
+                "\nQuantidade de banheiros: " + imoveis[i].banheiros +
+                "\nPossui garagem: " + imoveis[i].garagem
+                )
+        break
+
+        case "3":
+            alert("Encerrando...")
+        break
+
+        default: ("Opção inválida")
+        break
     }
-    
 }
-while(opcao != 3)
+while (opcao !== "3");
