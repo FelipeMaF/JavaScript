@@ -1,13 +1,3 @@
-/*
-  // Podemos usar vários níveis de laços FOR para iterar facilmente pela matriz
-for (let i = 0; i < matriz.length; i++) {
-    for (let j = 0; j < matriz[i].length; j++) {
-      const elemento = matriz[i][j]
-      console.log("Posição: (" + i + ", " + j + ") Valor: " + elemento)
-    }
-  }
-  */
-
 /* abaixo um Array, com 3 Array, e dentro de cada Array tem 3 elementos.
   const arr = [
     ["1 nivel",
