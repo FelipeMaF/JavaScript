@@ -17,7 +17,18 @@ do {
             imovel.banheiros = prompt("Quantos banheiros possui: ")
             imovel.garagem = prompt("Possui garagem, SIM/NÃO: ")
 
-            imoveis.push(imovel)
+
+            const confirma = confirm(
+                "\nProprietario: " + imovel.prop +
+                "\nQuantidade de quartos: " + imovel.quartos +
+                "\nQuantidade de banheiros: " + imovel.banheiros +
+                "\nPossui garagem: " + imovel.garagem
+              )
+        
+              if (confirma) {
+                imoveis.push(imovel)
+              }
+
         break
 
         case "2":
