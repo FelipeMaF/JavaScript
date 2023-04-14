@@ -44,7 +44,7 @@ do{
                 break
 
             case "3":
-                altura = prompt("Digite o tamanho da altura: ")
+                altura = prompt("Digite o tamanho do lado: ")
                 alert("Área do quadrado: " + quadrado())
                 break
 
@@ -55,8 +55,21 @@ do{
                 alert("Área do trapézio: " + trapezio())
                 break
 
+            case "5":
+                diametro = prompt("Digite o tamanho do Diametro: ")
+                alert("Área do circulo: " + circulo())
+                break
+
+            case "6":
+                alert("Encerrando programa!")
+                break
+
+            default:
+                alert("Escolha inválida")
         }
 }while(opcao !== "6");
+
+
 
 function triangulo() {
     return (base * altura / 2)
@@ -78,9 +91,3 @@ function circulo() {
     return ((3,14 * ((diametro / 2) * (diametro / 2))))
 }
 
-
-
-/*
-- área do trapézio: (base maior + base menor) * altura / 2
-- área do círculo: pi * raio² (considere pi = 3.14)
-*/
