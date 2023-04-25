@@ -8,7 +8,6 @@ String(42) //resultado vai ser '42'
 String(true) //resultado vai ser 'true'
 
 
-
 /* Também possui propriedades e funções*/
 Number("42") //resultado 42
 
