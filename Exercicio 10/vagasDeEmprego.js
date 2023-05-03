@@ -17,7 +17,7 @@ function exibirMenu() {
     return opcao
   }
 
-  function executar() {
+function executar() {
     let opcao = ""
   
     do {
@@ -55,11 +55,11 @@ function listarVagas() {
       textoFinal += " (" + vaga.candidatos.length + " candidatos)\n"
       return textoFinal
     }, "")
-  
+
     alert(vagasEmTexto)
   }
 
-  function novaVaga() {
+function novaVaga() {
     const nome = prompt("Informe um nome para a vaga:")
     const descricao = prompt("Informe um descrição para a vaga:")
     const dataLimite = prompt("Informe um data limite (dd/mm/aaaa) para a vaga:")
@@ -76,7 +76,7 @@ function listarVagas() {
     }
   }
 
-  function exibirVaga() {
+function exibirVaga() {
     const indice = prompt("Informe o índice da vaga que deseja exibir:")
     const vaga = vagas[indice]
   
@@ -92,7 +92,7 @@ function listarVagas() {
     )
   }
 
-  function inscreverCandidato() {
+function inscreverCandidato() {
     const candidato = prompt("Informe o nome do(a) candidato(a):")
     const indice = prompt("Informe o índice da vaga para a qual o(a) candidato(a) deseja se inscrever:")
     const vaga = vagas[indice]
@@ -108,7 +108,7 @@ function listarVagas() {
     }
   }
 
-  function excluirVaga() {
+function excluirVaga() {
     const indice = prompt("Informe o índice da vaga que deseja excluir:")
     const vaga = vagas[indice]
   
