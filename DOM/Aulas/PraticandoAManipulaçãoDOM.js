@@ -1,30 +1,4 @@
-function addContact() {
-    const contactSection = document.getElementById('contacts-list')
-  
-    const h3 = document.createElement('h3')
-      h3.innerText = "Contato"
-  
-    const ul = document.createElement('ul')
-  
-      const nameLi = document.createElement('h1')
-        nameLi.innerText = "Nome: "
-          const nameInput = document.createElement('input')
 
-    ul.appendChild(nameInput)
-    ul.appendChild(nameLi)
-    contactSection.append(h3, ul)
-  }
-  
-  function removeContact() {
-    const contactSection = document.getElementById('contacts-list')
-  
-    const titles = document.getElementsByTagName('h3')
-    const contacts = document.getElementsByTagName('ul')
-  
-    contactSection.removeChild(titles[titles.length - 1])
-    contactSection.removeChild(contacts[contacts.length - 1])
-  }
-/*
   function addContact() {
     const contactSection = document.getElementById('contacts-list')
   
@@ -73,4 +47,3 @@ function addContact() {
     contactSection.removeChild(titles[titles.length - 1])
     contactSection.removeChild(contacts[contacts.length - 1])
   }
-  */

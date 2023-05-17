@@ -4,35 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="EscalandoTime.js"></script>
     <title>Escalando Time</title>
 </head>
 <body>
     <h1>Escalando time Tabajara !!</h1>
     <label for="inpcamisa">Camisa:</label>
-    <input type="text" placeholder="10" id="inpcamisa" style="width: 5vh;"> 
+    <input type="number" placeholder="10" id="inpcamisa" name="inpcamisa" value="" style="width: 8vh;" > 
     <br>
     <label for="inpjogador">Jogador:</label>
-    <input type="text" placeholder="Ronaldinho" id="inpjogador" style="width: 10vh;"> 
+    <input type="text" placeholder="Ronaldinho" id="inpjogador" style="width: 25vh;"> 
     <br>
     <label for="inpposição">Posição:</label>
-    <input type="text" placeholder="Atacante" id="inpposição" style="width: 10vh;"> 
-    <button onclick="addJogador()">Criar</button>  
+    <input type="text" placeholder="Atacante" id="inpposição" style="width: 25vh;"> 
+    <button onclick="addJogador()">Escalar</button>  
     <br><br>
 
-    <table>
+    <table id="campoTabela">
         <tr>
-            <th>Camisa</th>
-            <th>Jogador</th>
-            <th>Posição</th>
-        </tr>
-
-        <tr id="campoTabela">
-            <td>conteudoteste</td>
+            <th id="camisa">Camisa</th>
+            <th id="jogador">Jogador</th>
+            <th id="posição">Posição</th>
         </tr>
     </table>
 
     <br>
-    <input type="text" placeholder="Camisa" id="camisa" style="width: 8vh;"> <button>Remover jogador</button> 
+    <input type="number" placeholder="Camisa" id="camisa" style="width: 15vh;"> <button onclick="removeJogador()">Remover jogador</button> 
 
 </body>
 </html>
