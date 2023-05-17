@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalando Time</title>
+</head>
+<body>
+    <h1>Escalando time Tabajara !!</h1>
+    <label for="inpcamisa">Camisa:</label>
+    <input type="text" placeholder="10" id="inpcamisa" style="width: 5vh;"> 
+    <br>
+    <label for="inpjogador">Jogador:</label>
+    <input type="text" placeholder="Ronaldinho" id="inpjogador" style="width: 10vh;"> 
+    <br>
+    <label for="inpposição">Posição:</label>
+    <input type="text" placeholder="Atacante" id="inpposição" style="width: 10vh;"> 
+    <button onclick="addJogador()">Criar</button>  
+    <br><br>
+
+    <table>
+        <tr>
+            <th>Camisa</th>
+            <th>Jogador</th>
+            <th>Posição</th>
+        </tr>
+
+        <tr id="campoTabela">
+            <td>conteudoteste</td>
+        </tr>
+    </table>
+
+    <br>
+    <input type="text" placeholder="Camisa" id="camisa" style="width: 8vh;"> <button>Remover jogador</button> 
+
+</body>
+</html>
+
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
