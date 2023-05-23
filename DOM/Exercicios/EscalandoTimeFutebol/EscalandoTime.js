@@ -29,12 +29,28 @@ function addJogador() {
     
 }
 
+
+function removeJogador() {
+    let removeTr = document.querySelector("table > tr > td")
+    let camisaRemoveJog = inpremovecamisa.value
+    if()
+     removeTr = document.querySelector("table > tr")
+
+    
+
+    removeTr.remove()
+
+}
+
+
+/*
 function removeJogador() {
     const removeTr = document.querySelector("table > tr")
-
+    
     removeTr.remove("td")
 
 }
+*/
 
 /*# 8 - Exercício 11
 
