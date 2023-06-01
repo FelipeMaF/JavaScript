@@ -1,16 +1,16 @@
 function addJogador() {
-    //const tabela = document.querySelector("table")
+
     const tabela = document.getElementById('campoTabela')
 
-    const tr = document.createElement('tr')
+        const tr = document.createElement('tr')
 
-        const numeroCamisa = document.createElement('td')
-            numeroCamisa.innerText = inpcamisa.value
-        const jogador = document.createElement('td')
-            jogador.innerText = inpjogador.value
-        const posição = document.createElement('td')
-            posição.innerText = inpposição.value
-    
+            const numeroCamisa = document.createElement('td')
+                numeroCamisa.innerText = inpcamisa.value
+            const jogador = document.createElement('td')
+                jogador.innerText = inpjogador.value
+            const posição = document.createElement('td')
+                posição.innerText = inpposição.value
+
     
     const confirma = confirm(
         `Confirmar escalação:
@@ -29,18 +29,24 @@ function addJogador() {
     
 }
 
-
 function removeJogador() {
-    let removeTr = document.querySelector("table > tr > td")
-    let camisaRemoveJog = inpremovecamisa.value
-    if()
-     removeTr = document.querySelector("table > tr")
-
+    //const removeTr = document.querySelector("table > tr > td")
+    //let posicaocamisa = 0
+        
+    if(removeTr = inpremovecamisa.value){
+        let removeTr = document.querySelectorAll("table > tr > td")[posicaocamisa].value
+        removeTr.remove()}
     
-
+    /*    
+    removeTr = document.querySelectorAll("table > tr > td")[posicaocamisa]
     removeTr.remove()
 
+    removeTr = document.querySelectorAll("table > tr > td")[posicaocamisa]
+    removeTr.remove()
+    */
 }
+
+
 
 
 /*
