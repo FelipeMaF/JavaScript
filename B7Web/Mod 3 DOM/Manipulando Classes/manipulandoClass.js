@@ -17,3 +17,11 @@ function azul() {
     document.querySelector('#exemplo').classList.add('azul')
 
 }
+
+function trocar() {
+    if(document.querySelector('#btns').classList.contains('vermelho'))
+    {document.querySelector('#btns').classList.remove('vermelho')
+    document.querySelector('#btns').classList.add('verde')}
+
+    else{document.querySelector('#btns').classList.add('vermelho')}
+}
