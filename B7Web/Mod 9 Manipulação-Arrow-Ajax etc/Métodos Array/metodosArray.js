@@ -65,7 +65,7 @@ let lista4 = [
 ]
 
 //BUSCANDO CONTEUDO EXATO
-let pessoa = (lista4.filter(function(item) {
+let pessoa = (lista4.find(function(item) {
     return (item.sobrenome == 'flavia') ? true : false
     /*acima utilizei um meio mais direto
     if(item.sobrenome == 'flavia'){return true}
